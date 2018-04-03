@@ -1,0 +1,172 @@
+html{
+	height: 100% !important;
+}
+#wrap{
+	background-image: url("../assets/img/west.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: initial;
+	min-height: 100%;
+	height: auto !important;
+	margin: 0 auto -60px;
+}
+
+body{
+	height: 100% !important;
+}
+
+
+
+#footer {
+	height: 60px;
+	
+      }
+#push{
+	height: 60px;
+}
+#footer{
+	padding-top: 20px;
+	background-color: #045ba8;
+	color: white;
+}
+
+.well {
+   background-color: rgba(220, 220, 220, 0.7);
+	border: 0 !important;
+	border-color: 0 !important;
+	border-radius: 0 !important;
+}
+
+.header-bg{
+	height: 63px;
+	background-color: #42a5f5;
+	padding-left: 20px;
+	margin-top: 55px;
+}
+
+.header-bg h2{
+	padding-top: 13px !important;
+	color: white;
+}
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+
+
+/*Fun begins*/
+.tab_container {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.tablinks, section {
+  clear: both;
+  display: none;
+}
+
+section{
+	background: none !important;
+	border: none !important;
+}
+
+
+.tabs {
+  font-weight: 700;
+  font-size: 18px;
+  
+  
+  padding: 1.3em;
+  color: #757575;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
+  display: block;
+  
+  background: #fff;
+  
+	
+}
+
+.tab_container .tab-content .well,
+.tab_container .tab-content h3 {
+  -webkit-animation: fadeInScale 0.7s ease-in-out;
+  -moz-animation: fadeInScale 0.7s ease-in-out;
+  animation: fadeInScale 0.7s ease-in-out;
+}
+.tab_container .tab-content h3  {
+  text-align: center;
+}
+
+.tab_container [id^="tab"]:checked + label {
+  background: #fff;
+  box-shadow: inset 0 3px #0CE;
+}
+
+.tab_container [id^="tab"]:checked + label .fa {
+  color: #0CE;
+}
+
+
+
+/*Media query*/
+@media only screen and (max-width: 930px) {
+  label span {
+    font-size: 14px;
+  }
+  label .fa {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  label span {
+    display: none;
+  }
+
+  label .fa {
+    font-size: 16px;
+  }
+
+  .tab_container {
+    width: 98%;
+  }
+}
+
+/*Content Animation*/
+@keyframes fadeInScale {
+  0% {
+  	transform: scale(0.9);
+  	opacity: 0;
+  }
+  
+  100% {
+  	transform: scale(1);
+  	opacity: 1;
+  }
+}

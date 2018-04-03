@@ -1,0 +1,101 @@
+/* CSS Document */
+
+html {
+	height: 100% !important;
+}
+#wrap {
+	background-image: url("../assets/img/west.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: initial;
+	min-height: 100%;
+	height: auto !important;
+	margin: 0 auto -60px;
+}
+
+body{
+	height: 100% !important;
+}
+
+#push, #footer {
+	height: 60px;
+}
+#footer {
+	padding-top: 20px;
+	background-color: #045ba8;
+	color: white;
+}
+
+.header-bg{
+	height: 63px;
+	background-color: #42a5f5;
+	padding-left: 20px;
+	margin-top: 55px;
+}
+
+.header-bg h2{
+	padding-top: 13px !important;
+	color: white;
+}
+
+
+
+.panel, .panel-default, .panel-heading, .panel-collapse, .panel-body, .panel-group{
+	border: 0 !important;
+	border-radius: 0 !important;
+	
+}
+.panel-transparent{
+        background: none !important;
+    }
+.panel-semi-transparent{
+        background-color: rgba(220, 220, 220, 0.7)!important;
+    }
+ 
+.form-control{
+	border-radius: 0 !important;
+	
+}
+
+.well{
+	height: 100% !important;
+	min-height: 100% !important;
+	background-color: rgba(220, 220, 220, 0.7)!important;
+	border: 0 !important;
+	border-color: 0 !important;
+	border-radius: 0 !important;
+}
+
+h4{
+	color: white !important;
+	font-size: 20px !important;
+}
+
+@media only screen and (max-width: 600px) {
+.scrollme {
+	overflow-y: auto;
+}
+}
+
+
+
+.bg{
+	background-color: rgba(220, 220, 220, 0.7)!important;
+	height: auto!important ;
+	
+}
+
+
+.panel-heading-parent{
+	margin-top: 10px;
+	height: 50px !important;
+	background-color: #0077c2 !important;
+}
+.panel-heading-child{
+	
+	height: 50px !important;
+	background-color: #0077c2 !important;
+}
+

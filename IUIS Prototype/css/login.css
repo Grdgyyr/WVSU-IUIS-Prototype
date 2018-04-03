@@ -1,0 +1,44 @@
+html{
+	height: 100% !important;
+}
+#wrap{
+	background-image: url("../assets/img/west.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: initial;
+	min-height: 100%;
+	height: auto !important;
+	margin: 0 auto -60px;
+}
+
+body{
+	height: 100% !important;
+}
+
+
+.logo{
+	width: 60%;
+	height: 60%;
+	
+}
+
+.well {
+   background-color: rgba(220, 220, 220, 0.7);
+	border: 0 !important;
+	border-color: 0 !important;
+	border-radius: 0 !important;
+}
+#footer {
+	height: 60px;
+	
+      }
+#push{
+	height: 60px !important;
+}
+#footer{
+	padding-top: 20px;
+	background-color: #045ba8;
+	color: white;
+}

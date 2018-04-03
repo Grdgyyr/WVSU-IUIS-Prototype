@@ -1,0 +1,98 @@
+.navbar {
+	border-radius: 0 !important;
+	background-color: #045ba8;
+	border: 0 !important;
+}
+.navbar a{
+	color: white !important;
+}
+.main-header {
+	margin-right: 15px !important;
+}
+.main-header a {
+	font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+.main-header a {
+	font-size: 15px;
+}
+}
+
+@media (max-width: 1120px) {
+.navbar-header {
+	float: none;
+}
+.navbar-left, .navbar-right {
+	float: none !important;
+}
+.navbar a {
+	color: white !important;
+}
+.navbar-toggle {
+	display: block;
+}
+.navbar-collapse {
+	border-top: 1px solid transparent;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar-fixed-top {
+	top: 0;
+	border-width: 0 0 1px;
+}
+.navbar-collapse.collapse {
+	display: none!important;
+}
+.navbar-nav {
+	float: none!important;
+	margin-top: 7.5px;
+}
+.navbar-nav>li {
+	float: none;
+}
+.navbar-nav>li>a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.collapse.in {
+	display: block !important;
+}
+}
+.navbar-collapse.in {
+	max-height: 100% !important;
+	overflow: hidden;
+	height: auto !important;
+}
+.navbar-toggle {
+	margin-top: 20px !important;
+}
+.main-header {
+	height: 80px !important;
+}
+.main-header-right {
+	padding-top: 10px !important;
+}
+.nav-inbox-right {
+	margin-top: 15px !important;
+}
+.nav-main {
+	margin-top: 15px !important;
+}
+.nav-main ul {
+	min-height: 50px !important;
+}
+.nav-main a {
+	height: 50px !important;
+}
+.nav-main li {
+	
+}
+.nav-main li:hover {
+	background: #003378 !important;
+}
+.nav-main>li.active>a {
+	background-color: #003378 !important;
+}
+.navbar-nav > li > .dropdown-menu > li > a {
+	color: black !important;
+}

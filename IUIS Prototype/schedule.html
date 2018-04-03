@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<!--Jose Occeña III-->
+
+<!--
+Palletes
+Main: #045ba8
+Light: #5387da
+Dark: #003378
+
+S-Main: #42a5f5
+S-Light: #80d6ff
+S-Dark: #0077c2
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Access Module | Schedule</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/schedule.css" rel="stylesheet">
+<link href="css/navbar.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+<div id="wrap">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid"> 
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header main-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#"> <span> <img src="assets/img/WVSUlogo.png" width="55" height="55" class="d-inline-block align-top " alt=""> </span> Student Access Module </a> </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse testing2" id="defaultNavbar1">
+        <ul class="nav navbar-nav nav-main">
+          <li class=""> <a href="messages.html"> <i class="fa fa-inbox"></i>Messages <span class="sr-only"></span> </a> </li>
+          <li class=""> <a href="grades.html"> <i class="fa fa-bar-chart"></i>Grades <span class="sr-only"></span> </a> </li>
+          <li class=""> <a href="account.html"> <i class="fa fa-money"></i>Accounts <span class="sr-only"></span> </a> </li>
+          <li class="active"> <a href="schedule.html"> <i class="fa fa-calendar"></i>Schedule <span class="sr-only"></span> </a> </li>
+          <!-- <li><a href="#">s</a></li> -->
+        </ul>
+        <ul class="nav navbar-nav navbar-right main-header-right">
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <img src="assets/img/lyndon_gwapo.jpg" width="25" height="25" class="d-inline-block align-top img-circle" alt=""> Lyndon Paul Ampatuan <span class="caret"></span> </a>
+            <ul class="dropdown-menu" role="menu">
+              <li> <a href="profile.html"> <i class="fa fa-user-circle"></i>Profile</a> </li>
+              <li class="divider"></li>
+              <li> <a href="login.html"> <i class="fa fa-sign-out "></i>Sign out</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse --> 
+    </div>
+    <!-- /.container-fluid --> 
+  </nav>
+  <div class="container-fluid">
+    <div class="header-bg">
+      <h2 class=""> <span><i class="fa fa-calendar"></i></span> Schedule</h2>
+    </div>
+    <div class="container well">
+      <div class="col-md-12 col-sm-12">
+        <div class="form-group col-xs-12 col-sm-5 ">
+          <label for="reportsList">School year:</label>
+          <input type="text" class="form-control" value="2018 - 2019" id="txtSchlYr">
+        </div>
+        <div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+          <label>ID No.</label>
+          <input type="text" class="form-control" value="2015-0823-MN" id="txtAdmsnStat">
+        </div>
+        <div class="form-group col-xs-12 col-sm-5">
+          <label>College:</label>
+          <input type="text" class="form-control" value="College of Information and Communications Technology" id="txtSchlstcStat">
+        </div>
+        <div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+          <label>Course:</label>
+          <input type="text" class="form-control" value="Bachelor of Science In Information Technology" id="txtCourse">
+        </div>
+        
+        <div class="scrollme">
+          <table class="table table-responsive borderless">
+            <tbody>
+              <thread >
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+              </thread>
+              <tr >
+                <td align="left" class="up"><p>7:00</p></td>
+                <td class="test" style="background-color: #c158dc" rowspan="3">Thesis Writing in IT: IT 215</td>
+                <td></td>
+                <td class="test" style="background-color: #c158dc" rowspan="3">Thesis Writing in IT: IT 215</td>
+              </tr>
+              <tr class="">
+                <td align="left" class="up"><p>7:30</p></td>
+                <td></td>
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>8:00</p></td>
+                <td></td>
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>8:30</p></td>
+                <td></td>
+					<td class="test" style="background-color: #494949" rowspan="3">Literatures of the World: LIT 102</td>
+					<td></td>
+					<td class="test" style="background-color: #494949" rowspan="3">Literatures of the World: LIT 102</td>
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>9:00</p></td>
+                <td></td>
+					<td class="test" style="background-color: #6ab7ff" rowspan="6">Mobile Computing: IT 228</td>
+					<td></td>
+					
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>9:30</p></td>
+                <td></td>
+              </tr>
+			<tr class="">
+                <td align="left" class="up"><p>10:00</p></td>
+                <td class="test" style="background-color: #6ab7ff" rowspan="4">Mobile Computing: IT 228</td>
+				<td class="test" style="background-color: #005cb2" rowspan="3">Politics and Governance: SS 104C</td>
+				<td class="test" style="background-color: #005cb2" rowspan="3">Politics and Governance: SS 104C</td>
+					
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>10:30</p></td>
+                <td></td>
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>11:00</p></td>
+                <td></td>
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>11:30</p></td>
+                <td class="test" style="background-color: #0097a7" rowspan="3">Ethics in ICT: SS 108B</td>
+					
+					<td class="test" style="background-color: #0097a7" rowspan="3">Ethics in ICT: SS 108B</td>
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>12:00</p></td>
+                <td></td>
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>12:30</p></td>
+                <td></td>
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>13:00</p></td>
+                <td class="test" style="background-color: #f57c00" rowspan="3">IT and Internet Security: IT 239</td>
+					<td></td>
+					<td class="test" style="background-color: #f57c00" rowspan="3">IT and Internet Security: IT 239</td>
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>13:30</p></td>
+                <td></td>
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>14:00</p></td>
+                <td></td>
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>14:30</p></td>
+                <td></td>
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>15:00</p></td>
+                <td class="test" style="background-color: #ff5722" rowspan="7">Software Engineering Fundamentals: IT 213</td>
+					<td class="test" style="background-color: #9a67ea" rowspan="7">Data Mining and Warehousing: IT 249</td>
+					
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>15:30</p></td>
+                <td></td>
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>16:00</p></td>
+                
+					<td class="test" style="background-color: #ff5722" rowspan="5">Software Engineering Fundamentals: IT 213</td>
+					<td class="test" style="background-color: #9a67ea" rowspan="5">Data Mining and Warehousing: IT 249</td>
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>16:30</p></td>
+                <td></td>
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>17:00</p></td>
+                <td></td>
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>17:30</p></td>
+                <td></td>
+              </tr>
+				<tr class="">
+                <td align="left" class="up"><p>18:00</p></td>
+                <td></td>
+              </tr>
+				
+				
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="push"></div>
+</div>
+<div id="footer">
+  <div class="container">
+    <p class="text-center ">West Visayas State University © 2018</p>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+
+<!--Jose Occeña III-->
+
+<!--
+Palletes
+Main: #045ba8
+Light: #5387da
+Dark: #003378
+
+S-Main: #42a5f5
+S-Light: #80d6ff
+S-Dark: #0077c2
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Access Module | Profile</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/profile.css" rel="stylesheet">
+<link href="css/navbar.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+<div id="wrap">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid"> 
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header main-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#"> <span> <img src="assets/img/WVSUlogo.png" width="55" height="55" class="d-inline-block align-top " alt=""> </span> Student Access Module </a> </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse testing2" id="defaultNavbar1">
+        <ul class="nav navbar-nav nav-main">
+          <li class=""> <a href="messages.html"> <i class="fa fa-inbox"></i>Messages <span class="sr-only"></span> </a> </li>
+          <li class=""> <a href="grades.html"> <i class="fa fa-bar-chart"></i>Grades <span class="sr-only"></span> </a> </li>
+          <li class=""> <a href="account.html"> <i class="fa fa-money"></i>Accounts <span class="sr-only"></span> </a> </li>
+          <li class=""> <a href="schedule.html"> <i class="fa fa-calendar"></i>Schedule <span class="sr-only"></span> </a> </li>
+          <!-- <li><a href="#">s</a></li> -->
+        </ul>
+        <ul class="nav navbar-nav navbar-right main-header-right">
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <img src="assets/img/lyndon_gwapo.jpg" width="25" height="25" class="d-inline-block align-top img-circle" alt=""> Lyndon Paul Ampatuan <span class="caret"></span> </a>
+            <ul class="dropdown-menu" role="menu">
+              <li> <a href="profile.html"> <i class="fa fa-user-circle"></i>Profile</a> </li>
+              <li class="divider"></li>
+              <li> <a href="login.html"> <i class="fa fa-sign-out "></i>Sign out</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse --> 
+    </div>
+    <!-- /.container-fluid --> 
+  </nav>
+  <div class="container-fluid">
+    <div class="header-bg">
+      <h2 class=""> <span><i class="glyphicon glyphicon-user"></i></span> Profile</h2>
+    </div>
+    <div class="tab_container">
+      <input class="tablinks" id="tab1" type="radio" name="tabs" checked>
+      <label class="tabs col-xs-4" for="tab1"><i class="fa fa-info-circle"></i><span>Personal Data</span></label>
+      <input class="tablinks" id="tab2" type="radio" name="tabs">
+      <label class="tabs col-xs-4" for="tab2"><i class="fa fa-users"></i><span>Family Background</span></label>
+      <input class="tablinks" id="tab3" type="radio" name="tabs">
+      <label class="tabs  col-xs-4" for="tab3"><i class="fa fa-graduation-cap"></i><span>Educational Attainment</span></label>
+      <section id="content1" class="tab-content">
+        <div class="container-fluid well">
+          <h3 class="text-center">Name</h3>
+          <div class="form-group col-xs-12 col-sm-3 ">
+            <label>Last Name:</label>
+            <input type="text" class="form-control" value="Ampatuan" id="txtLastName">
+          </div>
+          <div class="form-group col-xs-12 col-sm-3 col-sm-offset-1">
+            <label>First Name:</label>
+            <input type="text" class="form-control" value="Lyndon" id="txtFirstName">
+          </div>
+          <div class="form-group col-xs-12 col-sm-3 col-sm-offset-1">
+            <label>Middle Name:</label>
+            <input type="text" class="form-control" value="Jerecia" id="txtMiddleName">
+          </div>
+          <hr class="col-xs-12">
+          <div class="form-group col-xs-12 col-sm-3 ">
+            <label>Date of Birth:</label>
+            <input type="date" class="form-control" value="03/03/1998" id="txtDOB">
+          </div>
+          <div class="form-group col-xs-12 col-sm-3 col-sm-offset-1">
+            <label>Place of Birth:</label>
+            <input type="text" class="form-control" value="Iloilo" id="txtPlaceBirth">
+          </div>
+          <div class="form-group col-xs-12 col-sm-3 col-sm-offset-1">
+            <label>Age:</label>
+            <input type="text" class="form-control" value="19" id="txtAge">
+          </div>
+          <hr class="col-xs-12">
+          <div class="form-group col-xs-12 col-sm-3 ">
+            <label>Gender:</label>
+            <select class="form-control">
+              <option value="+47">Male</option>
+              <option value="+46">Female</option>
+            </select>
+          </div>
+          <div class="form-group col-xs-12 col-sm-3 col-sm-offset-1">
+            <label>Civil Status:</label>
+            <select class="form-control">
+              <option selected="" value="+47">Single</option>
+              <option selected="1" value="1">Married</option>
+              <option value="2">Legally Separated</option>
+              <option value="3">Widowed</option>
+            </select>
+          </div>
+          <div class="form-group col-xs-12 col-sm-3 col-sm-offset-1">
+            <label>Nationality:</label>
+            <select class="form-control">
+              <option value="+47">Filipino</option>
+              <option value="+46">Others</option>
+            </select>
+          </div>
+          <hr class="col-xs-12">
+          <h3 class="text-center col-xs-12">Residential Address</h3>
+          <div class="form-group col-xs-12 col-sm-3 ">
+            <label>Region:</label>
+            <select class="form-control">
+              <option value="01">REGION I (Ilocos Region)</option>
+              <option value="02">REGION II (Cagayan Valley)</option>
+              <option value="03">REGION III (Central Luzon)</option>
+              <option value="04">REGION IV-A (CALABARZON)</option>
+              <option value="05">REGION IV-B (MIMAROPA)</option>
+              <option value="06">REGION V (Bicol Region)</option>
+              <option selected="07" value="07">REGION VI (Western Visayas)</option>
+              <option value="08">REGION VII (Central Visayas)</option>
+              <option value="09">REGION VIII (Eastern Visayas)</option>
+              <option value="10">REGION IX (Zamboanga Peninsula)</option>
+              <option value="11">REGION X (Northern Mindanao)</option>
+              <option value="12">REGION XI (Davao Region)</option>
+              <option value="13">REGION XII (Soccsksargen)</option>
+              <option value="14">REGION XIII (Caraga)</option>
+              <option value="15">NCR - National Capital Region</option>
+              <option value="16">CAR - Cordillera Administrative Region</option>
+              <option value="17">ARMM - Autonomous Region in Muslim Mindanao</option>
+            </select>
+          </div>
+          <div class="form-group col-xs-12 col-sm-3 col-sm-offset-1">
+            <label>Province</label>
+            <select class="form-control">
+              <option value="32">Aklan</option>
+              <option value="33">Antique</option>
+              <option value="34">Capiz</option>
+              <option value="35">Guimaras</option>
+              <option selected="" value="36">Iloilo</option>
+              <option value="37">Negros Occidental</option>
+            </select>
+          </div>
+          <div class="form-group col-xs-12 col-sm-3 col-sm-offset-1">
+            <label>Municipality</label>
+            <select class="form-control">
+              <option value="">- city/municipality -</option>
+              <option value="712">Ajuy</option>
+              <option value="713">Alimodian</option>
+              <option value="714">Anilao</option>
+              <option value="715">Badiangan</option>
+              <option value="716">Balasan</option>
+              <option value="717">Banate</option>
+              <option value="718">Barotac Nuevo</option>
+              <option value="719">Barotac Viejo</option>
+              <option value="720">Batad</option>
+              <option value="721">Bingawan</option>
+              <option value="722">Cabatuan</option>
+              <option value="723">Calinog</option>
+              <option value="724">Carles</option>
+              <option value="726">Concepcion</option>
+              <option value="727">Dingle</option>
+              <option value="728">Dueñas</option>
+              <option value="729">Dumangas</option>
+              <option value="730">Estancia</option>
+              <option value="731">Guimbal</option>
+              <option value="732">Igbaras</option>
+              <option selected="" value="733">Iloilo City</option>
+              <option value="734">Janiuay</option>
+              <option value="735">Lambunao</option>
+              <option value="736">Leganes</option>
+              <option value="737">Lemery</option>
+              <option value="738">Leon</option>
+              <option value="739">Maasin</option>
+              <option value="740">Miagao</option>
+              <option value="741">Mina</option>
+              <option value="742">New Lucena</option>
+              <option value="743">Oton</option>
+              <option value="725">Passi City</option>
+              <option value="744">Pavia</option>
+              <option value="745">Pototan</option>
+              <option value="746">San Dionisio</option>
+              <option value="747">San Enrique</option>
+              <option value="748">San Joaquin</option>
+              <option value="749">San Miguel</option>
+              <option value="750">San Rafael</option>
+              <option value="751">Santa Barbara</option>
+              <option value="752">Sara</option>
+              <option value="753">Tigbauan</option>
+              <option value="754">Tubungan</option>
+              <option value="755">Zarraga</option>
+            </select>
+          </div>
+          <div class="form-group col-xs-12 col-sm-5 ">
+            <label>(Rm# Bldg./House#, Street, Brgy.):</label>
+            <input type="text" class="form-control" value="GRAN PLAINS, JARO, ILOILO CITY" id="txtResAddress">
+          </div>
+          <div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+            <label>Zip Code:</label>
+            <input type="text" class="form-control" value="5000" id="txtZipCode">
+          </div>
+          <hr class="col-xs-12">
+          <h3 class="text-center col-xs-12">Permanent Address</h3>
+          <div class="form-group col-xs-12 col-sm-3 ">
+            <label>Region:</label>
+            <select class="form-control">
+              <option value="01">REGION I (Ilocos Region)</option>
+              <option value="02">REGION II (Cagayan Valley)</option>
+              <option value="03">REGION III (Central Luzon)</option>
+              <option value="04">REGION IV-A (CALABARZON)</option>
+              <option value="05">REGION IV-B (MIMAROPA)</option>
+              <option value="06">REGION V (Bicol Region)</option>
+              <option selected="07" value="07">REGION VI (Western Visayas)</option>
+              <option value="08">REGION VII (Central Visayas)</option>
+              <option value="09">REGION VIII (Eastern Visayas)</option>
+              <option value="10">REGION IX (Zamboanga Peninsula)</option>
+              <option value="11">REGION X (Northern Mindanao)</option>
+              <option value="12">REGION XI (Davao Region)</option>
+              <option value="13">REGION XII (Soccsksargen)</option>
+              <option value="14">REGION XIII (Caraga)</option>
+              <option value="15">NCR - National Capital Region</option>
+              <option value="16">CAR - Cordillera Administrative Region</option>
+              <option value="17">ARMM - Autonomous Region in Muslim Mindanao</option>
+            </select>
+          </div>
+          <div class="form-group col-xs-12 col-sm-3 col-sm-offset-1">
+            <label>Province</label>
+            <select class="form-control">
+              <option value="32">Aklan</option>
+              <option value="33">Antique</option>
+              <option value="34">Capiz</option>
+              <option value="35">Guimaras</option>
+              <option selected="" value="36">Iloilo</option>
+              <option value="37">Negros Occidental</option>
+            </select>
+          </div>
+          <div class="form-group col-xs-12 col-sm-3 col-sm-offset-1">
+            <label>Municipality</label>
+            <select class="form-control">
+              <option value="">- city/municipality -</option>
+              <option value="712">Ajuy</option>
+              <option value="713">Alimodian</option>
+              <option value="714">Anilao</option>
+              <option value="715">Badiangan</option>
+              <option value="716">Balasan</option>
+              <option value="717">Banate</option>
+              <option value="718">Barotac Nuevo</option>
+              <option value="719">Barotac Viejo</option>
+              <option value="720">Batad</option>
+              <option value="721">Bingawan</option>
+              <option value="722">Cabatuan</option>
+              <option value="723">Calinog</option>
+              <option value="724">Carles</option>
+              <option value="726">Concepcion</option>
+              <option value="727">Dingle</option>
+              <option value="728">Dueñas</option>
+              <option value="729">Dumangas</option>
+              <option value="730">Estancia</option>
+              <option value="731">Guimbal</option>
+              <option value="732">Igbaras</option>
+              <option selected="" value="733">Iloilo City</option>
+              <option value="734">Janiuay</option>
+              <option value="735">Lambunao</option>
+              <option value="736">Leganes</option>
+              <option value="737">Lemery</option>
+              <option value="738">Leon</option>
+              <option value="739">Maasin</option>
+              <option value="740">Miagao</option>
+              <option value="741">Mina</option>
+              <option value="742">New Lucena</option>
+              <option value="743">Oton</option>
+              <option value="725">Passi City</option>
+              <option value="744">Pavia</option>
+              <option value="745">Pototan</option>
+              <option value="746">San Dionisio</option>
+              <option value="747">San Enrique</option>
+              <option value="748">San Joaquin</option>
+              <option value="749">San Miguel</option>
+              <option value="750">San Rafael</option>
+              <option value="751">Santa Barbara</option>
+              <option value="752">Sara</option>
+              <option value="753">Tigbauan</option>
+              <option value="754">Tubungan</option>
+              <option value="755">Zarraga</option>
+            </select>
+          </div>
+          <div class="form-group col-xs-12 col-sm-5 ">
+            <label>(Rm# Bldg./House#, Street, Brgy.):</label>
+            <input type="text" class="form-control" value="Cypress Avenue Granplains Quintinsalas Jaro" id="txtPermResAddress">
+          </div>
+          <div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+            <label>Zip Code:</label>
+            <input type="text" class="form-control" value="5000" id="txtPermZipCode">
+          </div>
+          <hr class="col-xs-12">
+          <h3 class="text-center col-xs-12">Contact</h3>
+          <div class="form-group col-xs-12 col-sm-5 ">
+            <label>Contact Numbers:</label>
+            <input type="text" class="form-control" value="330-8315" id="txtContact">
+          </div>
+          <div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+            <label>Mobile:</label>
+            <input type="text" class="form-control" value="09167366737" id="txtMobile">
+          </div>
+          <hr class="col-xs-12">
+          <div class="form-group col-xs-12 col-sm-5 ">
+            <label>Height:</label>
+            <input type="text" class="form-control" value="5.8" id="txtHeight">
+          </div>
+          <div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+            <label>Weight:</label>
+            <input type="text" class="form-control" value="68kg" id="txtWeight">
+          </div>
+          <hr class="col-xs-12">
+          <div class="form-group col-xs-12 col-sm-3 ">
+            <label>Email Address:</label>
+            <input type="text" class="form-control" value="lyndonpaul@gmail.com" id="txtEmail">
+          </div>
+          <div class="form-group col-xs-12 col-sm-3 col-sm-offset-1">
+            <label>Religion:</label>
+            <select class="form-control">
+              <option value="">- religion -</option>
+              <option selected="" value="1">ROMAN CATHOLIC</option>
+              <option value="2">IGLESIA NI CRISTO</option>
+              <option value="3">CHRISTIAN</option>
+              <option value="4">ISLAM</option>
+              <option value="5">BUDDHISM</option>
+              <option value="6">JEHOVAH'S WITNESS</option>
+              <option value="7">BAPTIST</option>
+              <option value="8">PROTESTANT</option>
+              <option value="9">SEVENTH DAY ADVENTIST</option>
+              <option value="10">PENTECOSTAL</option>
+            </select>
+          </div>
+          <div class="form-group col-xs-12 col-sm-3 col-sm-offset-1">
+            <label>Blood Type:</label>
+            <select class="form-control">
+              <option value="">- blood type -</option>
+				<option selected="" value="A">A</option>
+				<option value="B">B</option>
+				<option value="AB">AB</option>
+				<option value="O">O</option>
+            </select>
+          </div>
+			<hr class="col-xs-12">
+			<div class="form-group col-xs-12">
+            <label>Special Skill / Talent:</label>
+            <input type="text" class="form-control" value="" id="Special Skill / Talent">
+          </div>
+			<div class="form-group col-xs-12">
+            <label>Handicap/ailment or problem(s) which may affect your studies?:</label>
+            <input type="text" class="form-control" value="" id="Handicap/">
+          </div>
+        </div>
+      </section>
+      <section id="content2" class="tab-content">
+        <div class="container-fluid well">
+			<h3 class="text-center col-xs-12">Father</h3>
+			<div class="form-group col-xs-12 col-sm-5">
+            <label>Full Name:</label>
+            <input type="text" class="form-control" value="" id="txtFatherName">
+          </div>
+			<div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+            <label>Home Address:</label>
+            <input type="text" class="form-control" value="" id="txtFatherAddress">
+          </div>
+			<div class="form-group col-xs-12 col-sm-5">
+            <label>Telephone #:</label>
+            <input type="text" class="form-control" value="" id="txtFatherTel">
+          </div>
+			<div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+            <label>Mobile:</label>
+            <input type="text" class="form-control" value="" id="txtFatherMobile">
+          </div>
+			<div class="form-group col-xs-12 col-sm-5">
+            <label>Email:</label>
+            <input type="text" class="form-control" value="" id="txtFatherEmail">
+          </div>
+			<div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+            <label>Highest Educational Attainment:</label>
+            <select class="form-control">
+              <option value="">Elementary</option>
+				<option  value="A">HighSchool</option>
+				<option value="B">College</option>
+				<option value="AB">Masters</option>
+				<option selected="" value="O">Doctorate</option>
+				<option value="O">Vocational</option>
+            </select>
+          </div>
+			<div class="form-group col-xs-12 col-sm-5">
+            <label>Occupation:</label>
+            <input type="text" class="form-control" value="" id="txtMOccupation">
+          </div>
+			<div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+            <label>Employer Name:</label>
+            <input type="text" class="form-control" value="" id="txtMEmployerName">
+          </div>
+			<div class="form-group col-xs-12 col-sm-5">
+            <label>Employer Address:</label>
+            <input type="text" class="form-control" value="" id="txtMEmployerAddress">
+          </div>
+			<div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+            <label>Employer Tel. No.:</label>
+            <input type="text" class="form-control" value="" id="txtMEmployerTel">
+          </div>
+			<hr class="col-xs-12">
+          <h3 class="text-center col-xs-12">Mother</h3>
+			<div class="form-group col-xs-12 col-sm-5">
+            <label>Full Name:</label>
+            <input type="text" class="form-control" value="" id="txtMatherName">
+          </div>
+			<div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+            <label>Home Address:</label>
+            <input type="text" class="form-control" value="" id="txtMatherAddress">
+          </div>
+			<div class="form-group col-xs-12 col-sm-5">
+            <label>Telephone #:</label>
+            <input type="text" class="form-control" value="" id="txtMatherTel">
+          </div>
+			<div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+            <label>Mobile:</label>
+            <input type="text" class="form-control" value="" id="txtMatherMobile">
+          </div>
+			<div class="form-group col-xs-12 col-sm-5">
+            <label>Email:</label>
+            <input type="text" class="form-control" value="" id="txtMatherEmail">
+          </div>
+			<div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+            <label>Highest Educational Attainment:</label>
+            <select class="form-control">
+              <option value="">Elementary</option>
+				<option  value="A">HighSchool</option>
+				<option value="B">College</option>
+				<option value="AB">Masters</option>
+				<option selected="" value="O">Doctorate</option>
+				<option value="O">Vocational</option>
+            </select>
+          </div>
+			<div class="form-group col-xs-12 col-sm-5">
+            <label>Occupation:</label>
+            <input type="text" class="form-control" value="" id="txtMasdOccupation">
+          </div>
+			<div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+            <label>Employer Name:</label>
+            <input type="text" class="form-control" value="" id="txtMasdEmployerName">
+          </div>
+			<div class="form-group col-xs-12 col-sm-5">
+            <label>Employer Address:</label>
+            <input type="text" class="form-control" value="" id="txtMasdEmployerAddress">
+          </div>
+			<div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+            <label>Employer Tel. No.:</label>
+            <input type="text" class="form-control" value="" id="txtMasdEmployerTel">
+          </div>
+			<hr class="col-xs-12">
+          <h3 class="text-center col-xs-12">Currently living with</h3>
+			<div class="form-group col-xs-12 col-sm-5">
+            <label>Guardian's Name:</label>
+            <input type="text" class="form-control" value="" id="txtGName">
+          </div>
+			<div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+            <label>Address:</label>
+            <input type="text" class="form-control" value="" id="txtGAddress">
+			</div>
+			<div class="form-group col-xs-12 col-sm-5">
+            <label>Relation:</label>
+            <input type="text" class="form-control" value="" id="txtGRel">
+          </div>
+			<div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+            <label>Tel No.:</label>
+            <input type="text" class="form-control" value="" id="txtGTel">
+			</div>
+			<hr class="col-xs-12">
+          <h3 class="text-center col-xs-12">Number of siblings</h3>
+		</div>
+      </section>
+      <section id="content3" class="tab-content">
+        <div class="container-fluid well">
+		  <h1 class="text-center">PRAISE THE LORD!</h1>
+		  <h1 class="text-center">AMEN</h1>
+		  </div>
+		  
+        
+      </section>
+      
+    </div>
+  </div>
+  <div id="push"></div>
+</div>
+<div id="footer">
+  <div class="container">
+    <p class="text-center ">West Visayas State University © 2018</p>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

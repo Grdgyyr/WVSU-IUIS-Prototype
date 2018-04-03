@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+
+<!--Jose Occeña III-->
+
+<!--
+Palletes
+Main: #045ba8
+Light: #5387da
+Dark: #003378
+
+S-Main: #42a5f5
+S-Light: #80d6ff
+S-Dark: #0077c2
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Access Module | Grades</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/grades.css" rel="stylesheet">
+<link href="css/navbar.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+<div id="wrap">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid"> 
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header main-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#"> <span> <img src="assets/img/WVSUlogo.png" width="55" height="55" class="d-inline-block align-top " alt=""> </span> Student Access Module </a> </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse testing2" id="defaultNavbar1">
+        <ul class="nav navbar-nav nav-main">
+          <li class=""> <a href="messages.html"> <i class="fa fa-inbox"></i>Messages <span class="sr-only"></span> </a> </li>
+          <li class="active"> <a href="grades.html"> <i class="fa fa-bar-chart"></i>Grades <span class="sr-only"></span> </a> </li>
+          <li class=""> <a href="account.html"> <i class="fa fa-money"></i>Accounts <span class="sr-only"></span> </a> </li>
+          
+          <li class=""> <a href="schedule.html"> <i class="fa fa-calendar"></i>Schedule <span class="sr-only"></span> </a> </li>
+          <!-- <li><a href="#">s</a></li> -->
+        </ul>
+        <ul class="nav navbar-nav navbar-right main-header-right">
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <img src="assets/img/lyndon_gwapo.jpg" width="25" height="25" class="d-inline-block align-top img-circle" alt=""> Lyndon Paul Ampatuan <span class="caret"></span> </a>
+            <ul class="dropdown-menu" role="menu">
+              <li> <a href="profile.html"> <i class="fa fa-user-circle"></i>Profile</a> </li>
+              <li class="divider"></li>
+              <li> <a href="login.html"> <i class="fa fa-sign-out "></i>Sign out</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse --> 
+    </div>
+    <!-- /.container-fluid --> 
+  </nav>
+  <div class="container-fluid">
+    <div class="header-bg">
+      <h2 class=""> <span><i class="glyphicon glyphicon-education"></i></span> Grades</h2>
+    </div>
+    <div class=" bg"></div>
+    <div class="well container ">
+      <div class="panel-group " id="accordion">
+        <div class="panel panel-default panel-semi-transparent">
+          <div class="panel-heading panel-heading-parent">
+            <h4 class="panel-title"> <span><i class="glyphicon glyphicon-triangle-bottom"></i></span> <a data-toggle="collapse" data-parent="#accordion1"  href="#collapse1"> Third Year </a> </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <div class="panel-group" id="accordion2">
+                <div class="panel panel-default panel-transparent">
+                  <div class="panel-heading panel-heading-child">
+                    <h4 class="panel-title"> <span><i class="glyphicon glyphicon-th-list"></i></span> <a data-toggle="collapse" data-parent="#accordion2" href="#collapseThreeOne">Second Semester </a> </h4>
+                  </div>
+                  <div id="collapseThreeOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <div class="col-md-12">
+                        <div class="col-md-12 col-sm-12">
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label for="reportsList">School year:</label>
+                            <input type="text" class="form-control" value="2018 - 2019" id="txtSchlYr">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label>Admission Status:</label>
+                            <input type="text" class="form-control" value="Continuing" id="txtAdmsnStat">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label>Scholastic Status:</label>
+                            <input type="text" class="form-control" value="Regular" id="txtSchlstcStat">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label>Course:</label>
+                            <input type="text" class="form-control" value="Bachelor of Science In Information Technology" id="txtCourse">
+                          </div>
+                          <div class="form-group col-md-6 col-md-offset-3">
+                            <label>GWA ( excludes ROTC/CWTS ):</label>
+                            <input type="text" class="form-control" value="5.00" id="txtGWA">
+                          </div>
+                        </div>
+                        <div class="scrollme">
+                          <table class="table custab ">
+                            <thead>
+                              <tr class="active">
+                                <th>#</th>
+                                <th>Units</th>
+                                <th>Subject Code</th>
+                                <th>Subject Name</th>
+                                <th>Section Code</th>
+                                <th>Final Grade</th>
+                              </tr>
+                            </thead>
+                            <tr class="warning">
+                              <td>1</td>
+                              <td>3</td>
+                              <td>IT 228</td>
+                              <td>Mobile Computing</td>
+                              <td>BSIT 3-A ST</td>
+                              <td>3.00</td>
+                            </tr>
+                            <tr class="danger">
+                              <td>2</td>
+                              <td>3</td>
+                              <td>IT 213</td>
+                              <td>Software Engineering Fundamentals</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>5.00</td>
+                            </tr>
+                            <tr class="danger">
+                              <td>3</td>
+                              <td>3</td>
+                              <td>IT 215</td>
+                              <td>Thesis Writing in IT (Capstone Project)</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>INC</td>
+                            </tr>
+                            <tr class="success">
+                              <td>4</td>
+                              <td>3</td>
+                              <td>IT 239</td>
+                              <td>IT and Internet Security</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>1.75</td>
+                            </tr>
+                            <tr class="info">
+                              <td>5</td>
+                              <td>3</td>
+                              <td>IT 249</td>
+                              <td>Data Mining & Warehousing</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>2.75</td>
+                            </tr>
+                            <tr class="success">
+                              <td>6</td>
+                              <td>3</td>
+                              <td>LIT 102</td>
+                              <td>Literatures of the World</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>1.50</td>
+                            </tr>
+                            <tr class="danger">
+                              <td>7</td>
+                              <td>3</td>
+                              <td>SS 104C</td>
+                              <td>Politics and Governance with Philippine Constitution</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>INC</td>
+                            </tr>
+                            <tr class="info">
+                              <td>8</td>
+                              <td>3</td>
+                              <td>SS 108B</td>
+                              <td>Professional Ethics in ICT</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>2.50</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default panel-transparent">
+                  <div class="panel-heading panel-heading-child">
+                    <h4 class="panel-title"> <span><i class="glyphicon glyphicon-th-list"></i></span> <a data-toggle="collapse" data-parent="#accordion2" href="#collapseThreeTwo">First Semester </a> </h4>
+                  </div>
+                  <div id="collapseThreeTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="col-md-12">
+                        <div class="col-md-12 col-sm-12">
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label for="reportsList">School year:</label>
+                            <input type="text" class="form-control" value="2018 - 2019" id="1txtSchlYr">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label>Admission Status:</label>
+                            <input type="text" class="form-control" value="Continuing" id="1txtAdmsnStat">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label>Scholastic Status:</label>
+                            <input type="text" class="form-control" value="Regular" id="1txtSchlstcStat">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label>Course:</label>
+                            <input type="text" class="form-control" value="Bachelor of Science In Information Technology" id="1txtCourse">
+                          </div>
+                          <div class="form-group col-md-6 col-md-offset-3">
+                            <label>GWA ( excludes ROTC/CWTS ):</label>
+                            <input type="text" class="form-control" value="5.00" id="1txtGWA">
+                          </div>
+                        </div>
+                        <div class="scrollme">
+                          <table class="table custab ">
+                            <thead>
+                              <tr class="active">
+                                <th>#</th>
+                                <th>Units</th>
+                                <th>Subject Code</th>
+                                <th>Subject Name</th>
+                                <th>Section Code</th>
+                                <th>Final Grade</th>
+                              </tr>
+                            </thead>
+                            <tr class="warning">
+                              <td>1</td>
+                              <td>3</td>
+                              <td>IT 228</td>
+                              <td>Mobile Computing</td>
+                              <td>BSIT 3-A ST</td>
+                              <td>3.00</td>
+                            </tr>
+                            <tr class="danger">
+                              <td>2</td>
+                              <td>3</td>
+                              <td>IT 213</td>
+                              <td>Software Engineering Fundamentals</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>5.00</td>
+                            </tr>
+                            <tr class="danger">
+                              <td>3</td>
+                              <td>3</td>
+                              <td>IT 215</td>
+                              <td>Thesis Writing in IT (Capstone Project)</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>INC</td>
+                            </tr>
+                            <tr class="success">
+                              <td>4</td>
+                              <td>3</td>
+                              <td>IT 239</td>
+                              <td>IT and Internet Security</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>1.75</td>
+                            </tr>
+                            <tr class="info">
+                              <td>5</td>
+                              <td>3</td>
+                              <td>IT 249</td>
+                              <td>Data Mining & Warehousing</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>2.75</td>
+                            </tr>
+                            <tr class="success">
+                              <td>6</td>
+                              <td>3</td>
+                              <td>LIT 102</td>
+                              <td>Literatures of the World</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>1.50</td>
+                            </tr>
+                            <tr class="danger">
+                              <td>7</td>
+                              <td>3</td>
+                              <td>SS 104C</td>
+                              <td>Politics and Governance with Philippine Constitution</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>INC</td>
+                            </tr>
+                            <tr class="info">
+                              <td>8</td>
+                              <td>3</td>
+                              <td>SS 108B</td>
+                              <td>Professional Ethics in ICT</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>2.50</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default panel-semi-transparent">
+          <div class="panel-heading panel-heading-parent">
+            <h4 class="panel-title"> <span><i class="glyphicon glyphicon-triangle-bottom"></i></span> <a data-toggle="collapse" data-parent="#accordion1"  href="#collapse2"> Second Year </a> </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-group" id="accordion2-1">
+                <div class="panel panel-default panel-transparent">
+                  <div class="panel-heading panel-heading-child">
+                    <h4 class="panel-title"> <span><i class="glyphicon glyphicon-th-list"></i></span> <a data-toggle="collapse" data-parent="#accordion2" href="#collapse2-1">Second Semester </a> </h4>
+                  </div>
+                  <div id="collapse2-1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <div class="col-md-12">
+                        <div class="col-md-12 col-sm-12">
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label for="reportsList">School year:</label>
+                            <input type="text" class="form-control" value="2018 - 2019" id="2txtSchlYr">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label>Admission Status:</label>
+                            <input type="text" class="form-control" value="Continuing" id="2txtAdmsnStat">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label>Scholastic Status:</label>
+                            <input type="text" class="form-control" value="Regular" id="2txtSchlstcStat">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label>Course:</label>
+                            <input type="text" class="form-control" value="Bachelor of Science In Information Technology" id="2txtCourse">
+                          </div>
+                          <div class="form-group col-md-6 col-md-offset-3">
+                            <label>GWA ( excludes ROTC/CWTS ):</label>
+                            <input type="text" class="form-control" value="5.00" id="2txtGWA">
+                          </div>
+                        </div>
+                        <div class="scrollme">
+                          <table class="table custab ">
+                            <thead>
+                              <tr class="active">
+                                <th>#</th>
+                                <th>Units</th>
+                                <th>Subject Code</th>
+                                <th>Subject Name</th>
+                                <th>Section Code</th>
+                                <th>Final Grade</th>
+                              </tr>
+                            </thead>
+                            <tr class="warning">
+                              <td>1</td>
+                              <td>3</td>
+                              <td>IT 228</td>
+                              <td>Mobile Computing</td>
+                              <td>BSIT 3-A ST</td>
+                              <td>3.00</td>
+                            </tr>
+                            <tr class="danger">
+                              <td>2</td>
+                              <td>3</td>
+                              <td>IT 213</td>
+                              <td>Software Engineering Fundamentals</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>5.00</td>
+                            </tr>
+                            <tr class="danger">
+                              <td>3</td>
+                              <td>3</td>
+                              <td>IT 215</td>
+                              <td>Thesis Writing in IT (Capstone Project)</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>INC</td>
+                            </tr>
+                            <tr class="success">
+                              <td>4</td>
+                              <td>3</td>
+                              <td>IT 239</td>
+                              <td>IT and Internet Security</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>1.75</td>
+                            </tr>
+                            <tr class="info">
+                              <td>5</td>
+                              <td>3</td>
+                              <td>IT 249</td>
+                              <td>Data Mining & Warehousing</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>2.75</td>
+                            </tr>
+                            <tr class="success">
+                              <td>6</td>
+                              <td>3</td>
+                              <td>LIT 102</td>
+                              <td>Literatures of the World</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>1.50</td>
+                            </tr>
+                            <tr class="danger">
+                              <td>7</td>
+                              <td>3</td>
+                              <td>SS 104C</td>
+                              <td>Politics and Governance with Philippine Constitution</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>INC</td>
+                            </tr>
+                            <tr class="info">
+                              <td>8</td>
+                              <td>3</td>
+                              <td>SS 108B</td>
+                              <td>Professional Ethics in ICT</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>2.50</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default panel-transparent">
+                  <div class="panel-heading panel-heading-child">
+                    <h4 class="panel-title"> <span><i class="glyphicon glyphicon-th-list"></i></span> <a data-toggle="collapse" data-parent="#accordion2" href="#collapse2-2">First Semester </a> </h4>
+                  </div>
+                  <div id="collapse2-2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="col-md-12">
+                        <div class="col-md-12 col-sm-12">
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label for="reportsList">School year:</label>
+                            <input type="text" class="form-control" value="2018 - 2019" id="3txtSchlYr">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label>Admission Status:</label>
+                            <input type="text" class="form-control" value="Continuing" id="3txtAdmsnStat">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label>Scholastic Status:</label>
+                            <input type="text" class="form-control" value="Regular" id="3txtSchlstcStat">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label>Course:</label>
+                            <input type="text" class="form-control" value="Bachelor of Science In Information Technology" id="3txtCourse">
+                          </div>
+                          <div class="form-group col-md-6 col-md-offset-3">
+                            <label>GWA ( excludes ROTC/CWTS ):</label>
+                            <input type="text" class="form-control" value="5.00" id="3txtGWA">
+                          </div>
+                        </div>
+                        <div class="scrollme">
+                          <table class="table custab ">
+                            <thead>
+                              <tr class="active">
+                                <th>#</th>
+                                <th>Units</th>
+                                <th>Subject Code</th>
+                                <th>Subject Name</th>
+                                <th>Section Code</th>
+                                <th>Final Grade</th>
+                              </tr>
+                            </thead>
+                            <tr class="warning">
+                              <td>1</td>
+                              <td>3</td>
+                              <td>IT 228</td>
+                              <td>Mobile Computing</td>
+                              <td>BSIT 3-A ST</td>
+                              <td>3.00</td>
+                            </tr>
+                            <tr class="danger">
+                              <td>2</td>
+                              <td>3</td>
+                              <td>IT 213</td>
+                              <td>Software Engineering Fundamentals</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>5.00</td>
+                            </tr>
+                            <tr class="danger">
+                              <td>3</td>
+                              <td>3</td>
+                              <td>IT 215</td>
+                              <td>Thesis Writing in IT (Capstone Project)</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>INC</td>
+                            </tr>
+                            <tr class="success">
+                              <td>4</td>
+                              <td>3</td>
+                              <td>IT 239</td>
+                              <td>IT and Internet Security</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>1.75</td>
+                            </tr>
+                            <tr class="info">
+                              <td>5</td>
+                              <td>3</td>
+                              <td>IT 249</td>
+                              <td>Data Mining & Warehousing</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>2.75</td>
+                            </tr>
+                            <tr class="success">
+                              <td>6</td>
+                              <td>3</td>
+                              <td>LIT 102</td>
+                              <td>Literatures of the World</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>1.50</td>
+                            </tr>
+                            <tr class="danger">
+                              <td>7</td>
+                              <td>3</td>
+                              <td>SS 104C</td>
+                              <td>Politics and Governance with Philippine Constitution</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>INC</td>
+                            </tr>
+                            <tr class="info">
+                              <td>8</td>
+                              <td>3</td>
+                              <td>SS 108B</td>
+                              <td>Professional Ethics in ICT</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>2.50</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default panel-semi-transparent">
+          <div class="panel-heading panel-heading-parent">
+            <h4 class="panel-title"> <span><i class="glyphicon glyphicon-triangle-bottom"></i></span> <a data-toggle="collapse" data-parent="#accordion1"  href="#collapse3"> First Year </a> </h4>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-group" id="accordion3-1">
+                <div class="panel panel-default panel-transparent">
+                  <div class="panel-heading panel-heading-child">
+                    <h4 class="panel-title"> <span><i class="glyphicon glyphicon-th-list"></i></span> <a data-toggle="collapse" data-parent="#accordion2" href="#collapse3-1">Second Semester </a> </h4>
+                  </div>
+                  <div id="collapse3-1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <div class="col-md-12">
+                        <div class="col-md-12 col-sm-12">
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label for="reportsList">School year:</label>
+                            <input type="text" class="form-control" value="2018 - 2019" id="4txtSchlYr">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label>Admission Status:</label>
+                            <input type="text" class="form-control" value="Continuing" id="4txtAdmsnStat">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label>Scholastic Status:</label>
+                            <input type="text" class="form-control" value="Regular" id="4txtSchlstcStat">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label>Course:</label>
+                            <input type="text" class="form-control" value="Bachelor of Science In Information Technology" id="4txtCourse">
+                          </div>
+                          <div class="form-group col-md-6 col-md-offset-3">
+                            <label>GWA ( excludes ROTC/CWTS ):</label>
+                            <input type="text" class="form-control" value="5.00" id="4txtGWA">
+                          </div>
+                        </div>
+                        <div class="scrollme">
+                          <table class="table custab ">
+                            <thead>
+                              <tr class="active">
+                                <th>#</th>
+                                <th>Units</th>
+                                <th>Subject Code</th>
+                                <th>Subject Name</th>
+                                <th>Section Code</th>
+                                <th>Final Grade</th>
+                              </tr>
+                            </thead>
+                            <tr class="warning">
+                              <td>1</td>
+                              <td>3</td>
+                              <td>IT 228</td>
+                              <td>Mobile Computing</td>
+                              <td>BSIT 3-A ST</td>
+                              <td>3.00</td>
+                            </tr>
+                            <tr class="danger">
+                              <td>2</td>
+                              <td>3</td>
+                              <td>IT 213</td>
+                              <td>Software Engineering Fundamentals</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>5.00</td>
+                            </tr>
+                            <tr class="danger">
+                              <td>3</td>
+                              <td>3</td>
+                              <td>IT 215</td>
+                              <td>Thesis Writing in IT (Capstone Project)</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>INC</td>
+                            </tr>
+                            <tr class="success">
+                              <td>4</td>
+                              <td>3</td>
+                              <td>IT 239</td>
+                              <td>IT and Internet Security</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>1.75</td>
+                            </tr>
+                            <tr class="info">
+                              <td>5</td>
+                              <td>3</td>
+                              <td>IT 249</td>
+                              <td>Data Mining & Warehousing</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>2.75</td>
+                            </tr>
+                            <tr class="success">
+                              <td>6</td>
+                              <td>3</td>
+                              <td>LIT 102</td>
+                              <td>Literatures of the World</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>1.50</td>
+                            </tr>
+                            <tr class="danger">
+                              <td>7</td>
+                              <td>3</td>
+                              <td>SS 104C</td>
+                              <td>Politics and Governance with Philippine Constitution</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>INC</td>
+                            </tr>
+                            <tr class="info">
+                              <td>8</td>
+                              <td>3</td>
+                              <td>SS 108B</td>
+                              <td>Professional Ethics in ICT</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>2.50</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default panel-transparent">
+                  <div class="panel-heading panel-heading-child">
+                    <h4 class="panel-title"> <span><i class="glyphicon glyphicon-th-list"></i></span> <a data-toggle="collapse" data-parent="#accordion2" href="#collapse3-2">First Semester </a> </h4>
+                  </div>
+                  <div id="collapse3-2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="col-md-12">
+                        <div class="col-md-12 col-sm-12">
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label for="reportsList">School year:</label>
+                            <input type="text" class="form-control" value="2018 - 2019" id="5txtSchlYr">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label>Admission Status:</label>
+                            <input type="text" class="form-control" value="Continuing" id="5txtAdmsnStat">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label>Scholastic Status:</label>
+                            <input type="text" class="form-control" value="Regular" id="5txtSchlstcStat">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-6">
+                            <label>Course:</label>
+                            <input type="text" class="form-control" value="Bachelor of Science In Information Technology" id="5txtCourse">
+                          </div>
+                          <div class="form-group col-md-6 col-md-offset-3">
+                            <label>GWA ( excludes ROTC/CWTS ):</label>
+                            <input type="text" class="form-control" value="5.00" id="5txtGWA">
+                          </div>
+                        </div>
+                        <div class="scrollme">
+                          <table class="table custab ">
+                            <thead>
+                              <tr class="active">
+                                <th>#</th>
+                                <th>Units</th>
+                                <th>Subject Code</th>
+                                <th>Subject Name</th>
+                                <th>Section Code</th>
+                                <th>Final Grade</th>
+                              </tr>
+                            </thead>
+                            <tr class="warning">
+                              <td>1</td>
+                              <td>3</td>
+                              <td>IT 228</td>
+                              <td>Mobile Computing</td>
+                              <td>BSIT 3-A ST</td>
+                              <td>3.00</td>
+                            </tr>
+                            <tr class="danger">
+                              <td>2</td>
+                              <td>3</td>
+                              <td>IT 213</td>
+                              <td>Software Engineering Fundamentals</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>5.00</td>
+                            </tr>
+                            <tr class="danger">
+                              <td>3</td>
+                              <td>3</td>
+                              <td>IT 215</td>
+                              <td>Thesis Writing in IT (Capstone Project)</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>INC</td>
+                            </tr>
+                            <tr class="success">
+                              <td>4</td>
+                              <td>3</td>
+                              <td>IT 239</td>
+                              <td>IT and Internet Security</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>1.75</td>
+                            </tr>
+                            <tr class="info">
+                              <td>5</td>
+                              <td>3</td>
+                              <td>IT 249</td>
+                              <td>Data Mining & Warehousing</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>2.75</td>
+                            </tr>
+                            <tr class="success">
+                              <td>6</td>
+                              <td>3</td>
+                              <td>LIT 102</td>
+                              <td>Literatures of the World</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>1.50</td>
+                            </tr>
+                            <tr class="danger">
+                              <td>7</td>
+                              <td>3</td>
+                              <td>SS 104C</td>
+                              <td>Politics and Governance with Philippine Constitution</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>INC</td>
+                            </tr>
+                            <tr class="info">
+                              <td>8</td>
+                              <td>3</td>
+                              <td>SS 108B</td>
+                              <td>Professional Ethics in ICT</td>
+                              <td>BSIT 3-B DS</td>
+                              <td>2.50</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="push"></div>
+</div>
+<div id="footer">
+  <div class="container">
+    <p class="text-center ">West Visayas State University © 2018</p>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

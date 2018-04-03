@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Access Module | Login</title>
+
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="favicon.ico" rel="icon" type="image/x-icon">
+
+</head>
+
+<body>
+<div id="wrap">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid"> 
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header main-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				
+					<a class="navbar-brand" href="#">
+					<span>
+						<img src="assets/img/WVSUlogo.png" width="55" height="55" class="d-inline-block align-top " alt="">
+						
+					</span>
+					Student Access Module
+					
+				</a>
+     </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse testing2" id="defaultNavbar1">
+        <ul class="nav navbar-nav nav-main">
+        </ul>
+        <ul class="nav navbar-nav navbar-right main-header-right">
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <i class="fa fa-user-circle"></i> Guest <span class="caret"></span> </a> </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse --> 
+    </div>
+    <!-- /.container-fluid --> 
+  </nav>
+  <div class="container well">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3"> <img class="img-responsive center-block  logo" src="assets/img/WVSUlogo.png">
+        <h1 class="text-center">Student Access Module</h1>
+        <hr>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <form class="omb_loginForm" action="" autocomplete="off" method="POST">
+          <div class="input-group"> <span class="input-group-addon"><i class="fa fa-user"></i></span>
+            <input type="text" class="form-control" name="username" placeholder="Username">
+          </div>
+          <span class="help-block"></span>
+          <div class="input-group"> <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+            <input  type="password" class="form-control" name="password" placeholder="Password">
+          </div>
+          <span class="help-block"> </span>
+          <div class="col-xs-6 ">
+            <input type="checkbox" value="remember-me">
+            Remember Me </div>
+          <div class="col-xs-6 ">
+            <p class="pull-right"> <a href="forgot-password.html">Forgot password?</a> </p>
+          </div>
+          <div class=""> <a href="messages.html">
+            <button class="btn btn-lg btn-primary  col-sm-5 col-xs-12" type="button">Login</button>
+            </a>
+            <button class="btn btn-lg btn-default col-sm-5 col-xs-12 col-sm-offset-2" type="submit">Clear Entries</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <div class="col-sm-6">
+      <h4 class="">This module is exclusively for students only. Functions included are : </h4>
+      <ul>
+        <li>Messages</li>
+        <li>Update of Profile</li>
+        <li>Change of Password</li>
+        <li>Registration of Subjects</li>
+        <li>Assessment of Selected Subjects</li>
+        <li>Payment History (Statement of Accounts)</li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <h4 class="text-center">INSTRUCTIONS :</h4>
+      <ul>
+        <li>To sign-in, specify your username and password and click on the Login button.</li>
+        <li>To clear entries, click on the Clear Entries button.</li>
+        <li>If you forgot your password, clik on the Forgot Password link for assistance.</li>
+      </ul>
+    </div>
+  </div>
+  <div id="push"></div>
+</div>
+<div id="footer">
+  <div class="container">
+    <p class="text-center ">West Visayas State University © 2018</p>
+  </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

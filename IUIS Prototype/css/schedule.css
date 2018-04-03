@@ -1,0 +1,81 @@
+/* CSS Document */
+html{
+	height: 100% !important;
+}
+#wrap{
+	background-image: url("../assets/img/west.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: initial;
+	min-height: 100%;
+	height: auto !important;
+	margin: 0 auto -60px;
+}
+
+body{
+	height: 100% !important;
+}
+
+
+
+#footer {
+	height: 60px;
+	
+      }
+#push{
+	height: 60px;
+}
+#footer{
+	padding-top: 20px;
+	background-color: #045ba8;
+	color: white;
+}
+
+.table{
+	border: none !important;
+	border-color: none !important;
+	border-top: none !important;
+}
+
+.borderless > thead > tr > th,
+.borderless > tbody > tr > th,
+.borderless > tfoot > tr > th,
+.borderless > thead > tr > td,
+.borderless > tbody > tr > td,
+.borderless > tfoot > tr > td {
+  border-top: none !important;
+}
+
+.up p{
+	
+	margin-top: -10px;
+}
+
+.test{
+	background-color: aqua;
+}
+
+.well {
+   background-color: rgba(220, 220, 220, 0.7);
+	border: 0 !important;
+	border-color: 0 !important;
+	border-radius: 0 !important;
+}
+
+td{
+	color: white !important;
+}
+
+.header-bg{
+	height: 63px;
+	background-color: #42a5f5;
+	padding-left: 20px;
+	margin-top: 55px;
+}
+
+.header-bg h2{
+	padding-top: 13px !important;
+	color: white;
+}

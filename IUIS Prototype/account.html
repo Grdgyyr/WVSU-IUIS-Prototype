@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<!--Jose Occeña III-->
+
+<!--
+Palletes
+Main: #045ba8
+Light: #5387da
+Dark: #003378
+
+S-Main: #42a5f5
+S-Light: #80d6ff
+S-Dark: #0077c2
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Access Module | Accounts</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/account.css" rel="stylesheet">
+<link href="css/navbar.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+<div id="wrap">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid"> 
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header main-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#"> <span> <img src="assets/img/WVSUlogo.png" width="55" height="55" class="d-inline-block align-top " alt=""> </span> Student Access Module </a> </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse testing2" id="defaultNavbar1">
+        <ul class="nav navbar-nav nav-main">
+          <li class=""> <a href="messages.html"> <i class="fa fa-inbox"></i>Messages <span class="sr-only"></span> </a> </li>
+          <li class=""> <a href="grades.html"> <i class="fa fa-bar-chart"></i>Grades <span class="sr-only"></span> </a> </li>
+          <li class="active"> <a href="account.html"> <i class="fa fa-money"></i>Accounts <span class="sr-only"></span> </a> </li>
+          
+          <li class=""> <a href="schedule.html"> <i class="fa fa-calendar"></i>Schedule <span class="sr-only"></span> </a> </li>
+          <!-- <li><a href="#">s</a></li> -->
+        </ul>
+        <ul class="nav navbar-nav navbar-right main-header-right">
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <img src="assets/img/lyndon_gwapo.jpg" width="25" height="25" class="d-inline-block align-top img-circle" alt=""> Lyndon Paul Ampatuan <span class="caret"></span> </a>
+            <ul class="dropdown-menu" role="menu">
+              <li> <a href="profile.html"> <i class="fa fa-user-circle"></i>Profile</a> </li>
+              <li class="divider"></li>
+              <li> <a href="login.html"> <i class="fa fa-sign-out "></i>Sign out</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse --> 
+    </div>
+    <!-- /.container-fluid --> 
+  </nav>
+  <div class="container-fluid">
+    <div class="header-bg">
+      <h2 class=""> <span><i class="fa fa-money"></i></span> Student's Permanent Record Of Payments</h2>
+    </div>
+    <div class="container well">
+      <div class="col-md-12 col-sm-12">
+        <div class="form-group col-xs-12 col-sm-5 ">
+          <label for="reportsList">School year:</label>
+          <input type="text" class="form-control" value="2018 - 2019" id="txtSchlYr">
+        </div>
+        <div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+          <label>ID No.</label>
+          <input type="text" class="form-control" value="2015-0823-MN" id="txtAdmsnStat">
+        </div>
+        <div class="form-group col-xs-12 col-sm-5">
+          <label>College:</label>
+          <input type="text" class="form-control" value="College of Information and Communications Technology" id="txtSchlstcStat">
+        </div>
+        <div class="form-group col-xs-12 col-sm-5 col-sm-offset-2">
+          <label>Course:</label>
+          <input type="text" class="form-control" value="Bachelor of Science In Information Technology" id="txtCourse">
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+          <h4 class="text-center">West Visayas State University</h4>
+          <h4 class="text-center">Luna, St., La Paz, Iloilo City</h4>
+          <h4 class="text-center">Finance Division</h4>
+        </div>
+        <div class="scrollme">
+          <table class="table custab ">
+            <thead>
+              <tr class="active">
+                <th>School Year</th>
+                <th>Semester</th>
+                <th>Year Level</th>
+                <th>STFAP</th>
+                <th>Scholarship</th>
+                <th>O.R Date</th>
+                <th>O.R No.</th>
+                <th>Assessment</th>
+                <th>Payment</th>
+                <th>Balance</th>
+              </tr>
+            </thead>
+            <tr class="success">
+              <td>2015 - 2016</td>
+              <td>First Semester</td>
+              <td>1</td>
+              <td>BR9</td>
+			  <td>None</td>
+              <td>05/28/2015</td>
+              <td>743714</td>
+			  <td>₱ 13,690.00</td>
+			  <td>₱ 13,690.00</td>
+			  <td>₱ 0.00</td>
+            </tr>
+			<tr class="success">
+              <td>2015 - 2016</td>
+              <td>Second Semester</td>
+              <td>1</td>
+              <td>BR9</td>
+			  <td>None</td>
+              <td>11/05/2015</td>
+              <td>772264</td>
+			  <td>₱ 14,405.00</td>
+			  <td>₱ 14,405.00</td>
+			  <td>₱ 0.00</td>
+            </tr>
+			<tr class="success">
+              <td>2016 - 2017</td>
+              <td>First Semester</td>
+              <td>2</td>
+              <td>BR9</td>
+			  <td>None</td>
+              <td>05/27/2016</td>
+              <td>815788</td>
+			  <td>₱ 9,500.00</td>
+			  <td>₱ 9,500.00</td>
+			  <td>₱ 0.00</td>
+            </tr>
+			<tr class="success">
+              <td>2016 - 2017</td>
+              <td>Second Semester</td>
+              <td>2</td>
+              <td>BR9</td>
+			  <td>None</td>
+              <td>11/05/2016</td>
+              <td>835694</td>
+			  <td>₱ 16,090.00</td>
+			  <td>₱ 16,090.00</td>
+			  <td>₱ 0.00</td>
+            </tr>
+			<tr class="success">
+              <td>2017 - 2018</td>
+              <td>First Semester</td>
+              <td>3</td>
+              <td>FT17</td>
+			  <td>None</td>
+              <td>06/08/2017</td>
+              <td>867935</td>
+			  <td>₱ 7,170.00</td>
+			  <td>₱ 7,170.00</td>
+			  <td>₱ 0.00</td>
+            </tr>
+			<tr class="success">
+              <td>2017 - 2018</td>
+              <td>Second Semester</td>
+              <td>3</td>
+              <td>FT17</td>
+			  <td>None</td>
+              <td>11/03/2017</td>
+              <td>883108</td>
+			  <td>₱ 6,860.00</td>
+			  <td>₱ 6,860.00</td>
+			  <td>₱ 0.00</td>
+            </tr>
+            
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="push"></div>
+</div>
+<div id="footer">
+  <div class="container">
+    <p class="text-center ">West Visayas State University © 2018</p>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
